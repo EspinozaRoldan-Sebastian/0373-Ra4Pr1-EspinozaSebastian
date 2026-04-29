@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumne [
+  <!ELEMENT alumne (nom, cognom, telefon?, email?, modul+)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cognom (#PCDATA)>
+  <!ELEMENT telefon (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT modul (#PCDATA)>
+  <!ATTLIST alumne id CDATA #REQUIRED
+                   tipus (presencial | distancia) #REQUIRED>
+]>
+<alumne id="A001" tipus="presencial">
+  <nom>Anna</nom>
+  <cognom>Garcia Puig</cognom>
+  <telefon>612345678</telefon>
+  <email>anna.garcia@exemple.cat</email>
+  <modul>Sistemes Informàtics</modul>
+  <modul>Bases de Dades</modul>
+  <modul>Programació</modul>
+</alumne>
